@@ -1,0 +1,20 @@
+.navbar{
+    /* position:fixed !important; */
+    position: static !important;
+    padding: 18px;
+    background-color: white;
+}
+.main-nav{
+    margin-left: 4%;
+}
+.bi-icon{
+    padding: 35px !important;
+    color: black;
+    font-weight: bold; 
+}
+.navbar-pos{
+    width: 100vw;
+    overflow: hidden;
+    top: 0;
+}
+

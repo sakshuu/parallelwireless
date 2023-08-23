@@ -1,0 +1,23 @@
+.main-footer{
+    background-color: lightgray;
+}
+.footer-section{
+    text-align: center;
+    color: black;
+    font-size: xx-large;
+    /* font-weight: bold; */
+}
+.icon{
+    color: orangered;
+}
+
+.items{
+    margin-top: 7px;
+    display: flex;
+    gap: 26%;
+}
+.bi-cloud-arrow-down-fill{
+    color: orangered;
+    /* padding: 4px; */
+    
+}
