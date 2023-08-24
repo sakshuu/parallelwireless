@@ -1,15 +1,15 @@
 import React from 'react'
-import "./../../assets/css/home.css"
-import clientlogo from "./../../assets/img/clientlogo.png";
-import inland_logo from "./../../assets/img/inland_logo.png";
-import MTN_logo from "./../../assets/img/MTN_logo.jpg";
-import Optimera from "./../../assets/img/Optimera.png";
-import optus_logo from "./../../assets/img/optus_logo.png";
-import ruralfirst from "./../../assets/img/ruralfirst.png";
-import smart from "./../../assets/img/smart.png";
-import telefonica from "./../../assets/img/telefonica.png";
-import vodaphone_logo from "./../../assets/img/vodaphone_logo.png";
-import vodacom from "./../../assets/img/vodacom.png";
+import "./../../../assets/css/home.css"
+import clientlogo from "./../../../assets/img/clientlogo.png";
+import inland_logo from "./../../../assets/img/inland_logo.png";
+import MTN_logo from "./../../../assets/img/MTN_logo.jpg";
+import Optimera from "./../../../assets/img/Optimera.png";
+import optus_logo from "./../../../assets/img/optus_logo.png";
+import ruralfirst from "./../../../assets/img/ruralfirst.png";
+import smart from "./../../../assets/img/smart.png";
+import telefonica from "./../../../assets/img/telefonica.png";
+import vodaphone_logo from "./../../../assets/img/vodaphone_logo.png";
+import vodacom from "./../../../assets/img/vodacom.png";
 
 
 const IconCarousel = () => {

@@ -26,11 +26,6 @@
   margin-left: 10%;
 }
 /*  */
-.img-leader{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 /* careers */
 .careers-box{
   margin-top: 30px !important;
@@ -49,4 +44,8 @@
 /* products */
 .products{
   padding: 20px;
+}
+.events{
+  padding: 60px;
+  background-color: whitesmoke;
 }

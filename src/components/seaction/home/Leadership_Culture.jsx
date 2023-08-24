@@ -1,9 +1,9 @@
 import React from 'react'
-import iconCulture from "./../../assets/img/leaderships/iconCulture.png";
-import iconleadership from "./../../assets/img/leaderships/iconleadership.png";
-import iconPeople from "./../../assets/img/leaderships/iconPeople.png";
+import iconCulture from "./../../../assets/img/leaderships/iconCulture.png";
+import iconleadership from "./../../../assets/img/leaderships/iconleadership.png";
+import iconPeople from "./../../../assets/img/leaderships/iconPeople.png";
 import { Link } from 'react-router-dom';
-import  "./../../assets/css/home.css";
+import  "./../../../assets/css/home.css";
 
 const Leadership_Culture = () => {
     const data = [

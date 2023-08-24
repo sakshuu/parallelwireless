@@ -2,8 +2,7 @@ import React from 'react'
 import "./../assets/css/home.css"
 import { MyCarousel } from '../components'
 import { Link } from 'react-router-dom'
-import { Careers, IconCarousel, Leadership_Culture } from '../components/seaction'
-import OursProducts from '../components/seaction/oursProducts'
+import { Careers,  IconCarousel,  Leadership_Culture, OursProducts } from '../components/seaction/home'
 
 const Home = () => {
   const data= [

@@ -1,4 +1,7 @@
 import React from 'react'
+import awards from "./../../../assets/img/leaderships/awards.png";
+import events from "./../../../assets/img/leaderships/events.png";
+import { Link } from 'react-router-dom';
 
 const OursProducts = () => {
     const data =[
@@ -19,6 +22,23 @@ const OursProducts = () => {
         },
     ]
   return <>
+  <div className='events'>
+    <div className="row">
+        <div className="col-md-6">
+            <img src={awards} className='img-leader' alt="" />
+            <h1 className='text-center'>Upcoming Events</h1>
+            <p className='text-center'>Visit with us at upcoming tradeshows, conferences or attend our webinars to learn how we can help you reimagine your networks.s</p>
+            <Link class="lern mt-4"> <div  className='text-center'>Connect with us at events</div> </Link>
+        </div>
+        <div className="col-md-6">
+            <img src={events} className='img-leader' alt="" />
+            <h1 className='text-center'>Awards</h1>
+            <p className='text-center'>We are honored and humbled to be recognized by the industry with awards for our innovation, technology vision and deployments.</p>
+            <Link className='lern mt-4'> <div  className='text-center'>Lern more</div> </Link>
+        </div>
+    </div>
+</div>
+
   <h1 className='m-4 text-center'>Our Products</h1>
   <div className="container mb-4">
     <div className="row">
