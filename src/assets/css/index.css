@@ -2,10 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
-}
-.main{
-    padding-top: 8%;
+    font-family: 'Noto Sans', sans-serif !important;
 }
 .b-text{
     font-weight: bold;
@@ -13,3 +10,32 @@
 .color-t{
     color: orangered;
 }
+.font-text{
+    font-size: 100px;
+}
+.main{
+    margin-top: 7%;
+}
+.line-space{
+    line-height: 1px;
+}
+.bc-btn {
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+}
+.bc-btn:hover{
+    color: white;
+    background-color: orangered;
+    border: 1px solid orangered;
+}
+.lern{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+    font-size: larger;
+}
+.text-center{
+    text-align: center;
+}
+

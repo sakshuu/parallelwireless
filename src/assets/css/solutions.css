@@ -1,0 +1,46 @@
+/* soluation */
+.contentData{
+    padding: 10%;
+}
+.desc-data{
+    font-size: larger;
+}
+.content{
+    margin-top: 4%;
+}
+.text-center{
+text-align: center;
+}
+.para{
+    margin-top: 2%;
+    font-size: larger;
+    font-weight: 200;
+    
+}
+.bcground{
+    position: relative;
+    /* top:20%; */
+    margin-top: 7%;
+    background-image: url("https://www.parallelwireless.com/wp-content/uploads/hero-solutions.jpg") !important; 
+    height: 75vh !important;
+    width: 100vw !important; 
+    background-size: cover !important;
+    background-repeat: no-repeat, repeat; 
+}
+
+.main-heading{
+    /* z-index: 3; */
+    position: absolute;
+    width: 100vw;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    padding: 5px;
+    top: 81%;
+    /* margin-top: 20%; */
+}
+.heading{
+    font-size: 65px !important;
+    text-align: center;
+    color: black;
+}
+

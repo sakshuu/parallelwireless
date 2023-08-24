@@ -1,8 +1,11 @@
 .navbar{
-    /* position:fixed !important; */
-    position: static !important;
-    padding: 18px;
+    position:fixed !important;
+    overflow: hidden !important;
+    top: 0px !important;
     background-color: white;
+    width: 100vw;
+    /* bottom: 4%; */
+    /* margin-bottom: 20%; */
 }
 .main-nav{
     margin-left: 4%;
@@ -12,9 +15,13 @@
     color: black;
     font-weight: bold; 
 }
-.navbar-pos{
-    width: 100vw;
-    overflow: hidden;
-    top: 0;
+
+.a:hover{
+    color: orangered !important;
+    margin-top: 1px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  /* text-decoration-style: solid; */
 }
+
 

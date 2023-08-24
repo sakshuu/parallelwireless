@@ -1,19 +1,52 @@
 import React from 'react'
 import "./../assets/css/home.css"
-import { MyCarousel, Solutions } from '../components'
+import { MyCarousel } from '../components'
+import { Link } from 'react-router-dom'
+import { Careers, IconCarousel, Leadership_Culture } from '../components/seaction'
+import OursProducts from '../components/seaction/oursProducts'
 
 const Home = () => {
+  const data= [
+    {
+      img:"https://www.parallelwireless.com/wp-content/uploads/20211001-REIMAGINE-COVERAGE-opt-350x295.jpg",
+      title:"Reimagine Coverage",
+      desc:"Parallel Wireless OpenRAN supports indoor or outdoor deployment scenarios at the lowest TCO and can be deployed on an accelerated timeline to help mobile operators deliver coverage everywhere from rural to suburban to most dense urban.",
+    },
+    {
+      img:"https://www.parallelwireless.com/wp-content/uploads/20211102_REIMAGINE-CAPACITY-Home-page-350x295px-opt-350x295.jpg",
+      title:"Reimagine Capacity",
+      desc:"Easy to install, low-cost and high-performing cloud-native Parallel Wireless Open RAN supports macro, Massive MIMO or small cell deployments for densification and delivers superior end user QoS for consumers and industries in urban scenarios.",
+    },
+    {
+      img:"https://www.parallelwireless.com/wp-content/uploads/20211001-REIMAGINE-5G-AND-BEYOND-01-2-opt-350x295.jpg",
+      title:"Cityscape 5G and Beyond",
+      desc:"Parallel Wireless cloud-native ORAN approach enables any 5G migration option and is software upgradable to any future 3GPP releases delivering the most cost-effective, easy to deploy, and advanced 5G capabilities for all 5G use cases.",
+    }
+  ]
   return <>
-  <MyCarousel/>
-  <div className="container">
+<div className='main'>
+<MyCarousel/>
+<div className="container mt-4">
+  <div className="row">
+    {
+      data.map(item => <div className="col-md-4">
+        <div className="main-start">
+          <img src={item?.img} width={"350px"} alt="" />
+          <h2 className='mt-2'>{item?.title}</h2>
+          <p className='mt-2'>{item?.desc}</p>
+          <Link className='lern'>Learn more..</Link>
+        </div>
+      </div>
+        )
+    }
 
-  <div className='content'>
-  <h1 className='text-center'>Reimagine Your Network.</h1>
-  <h1 className='text-center'>Reimagine Your Economics</h1>
-  <p className='para'>Parallel Wireless created world’s only 5G 4G 3G 2G <span className='color-t'>OpenRAN</span>  architecture to make delivery of wireless <span className='color-t'> coverage</span> or <span  className='color-t'> coverage</span> capacity use cases, especially capital intensive 5G, affordable as it enables mobile operators and industries to unleash the full value of connectivity. With unified across 5G 4G 3G 2G cloud-native architecture that is open and standardized across five key domains – RAN, <span className='color-t'> Edge,</span> Core, Orchestration and Analytics – we are committed to 5G vision of bringing Internet to every person and organization for a truly connected world. The company’s end-to-end ALL G cloud-native OpenRAN portfolio is designed to help our customers modernize their networks, reduce deployment cost and complexity, increase operational efficiency, find new revenue streams and start deploying multi-vendor <span className='color-t'> 5G networks</span> today.</p>
-  <Solutions/>
   </div>
-  </div>
+</div>
+<IconCarousel/>
+<Leadership_Culture/>
+<Careers/>
+<OursProducts/>
+</div>
 
   </>
 }

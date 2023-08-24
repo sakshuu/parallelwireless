@@ -6,13 +6,11 @@ const MyFooter = () => {
 
   <footer class="py-5 main-footer">
       <div class="container">
-        <div>
 
         <p className='footer-section'>Find out how we help our customers roll out services faster and reduce OPEX by visiting our resources page to download data sheets and solution overviews or watch customer videos or webinar recordings.
 </p>
 <p className='footer-section'><i class="bi bi-cloud-arrow-down-fill"></i></p>
 <hr className='line'/>
-        </div>
         <div className="row">
 
         <div className="col-md-4">
