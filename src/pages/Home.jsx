@@ -23,7 +23,7 @@ const Home = () => {
     }
   ]
   return <>
-<div className='main'>
+{/* <div className='main'> */}
 <MyCarousel/>
 <div className="container mt-4">
   <div className="row">
@@ -45,7 +45,7 @@ const Home = () => {
 <Leadership_Culture/>
 <Careers/>
 <OursProducts/>
-</div>
+{/* </div> */}
 
   </>
 }

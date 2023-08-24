@@ -40,7 +40,7 @@ const Solutions = () => {
   </div>
 </div>
 
-<div className="container">
+<div className="container mb-4">
   <div className='content'>
   <h1 className='text-center'>Reimagine Your Network.</h1>
   <h1 className='text-center'>Reimagine Your Economics</h1>

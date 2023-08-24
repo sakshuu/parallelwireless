@@ -1,0 +1,10 @@
+.bcground{
+    position: relative;
+    /* top:20%; */
+    /* margin-top: 7%; */
+    background-image: url("https://www.parallelwireless.com/wp-content/uploads/products-hero-1-1600x500.jpg") !important; 
+    height: 75vh !important;
+    width: 100vw !important; 
+    background-size: cover !important;
+    background-repeat: no-repeat, repeat; 
+}

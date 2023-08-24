@@ -1,5 +1,5 @@
 import React from 'react'
-import "./../../../assets/css/home.css"
+// import "./../../../assets/css/home.css"
 import clientlogo from "./../../../assets/img/clientlogo.png";
 import inland_logo from "./../../../assets/img/inland_logo.png";
 import MTN_logo from "./../../../assets/img/MTN_logo.jpg";
@@ -10,14 +10,15 @@ import smart from "./../../../assets/img/smart.png";
 import telefonica from "./../../../assets/img/telefonica.png";
 import vodaphone_logo from "./../../../assets/img/vodaphone_logo.png";
 import vodacom from "./../../../assets/img/vodacom.png";
+import "./../../../assets/css/icon_carousel.css"
 
 
 const IconCarousel = () => {
   return <>
 
-    <div id="iconCarousel" className="carousel slide" data-bs-ride="carousel">
+    <div id="iconCarousel" className="carousel carousel-icon slide" data-bs-ride="carousel">
       <div className="carousel-inner">
-        <div className="carousel-item active">
+        <div className="carousel-item carousel-item-icon active">
 <img  className='px-4' width={"150px"} src={clientlogo} alt="" />
 <img  className='px-4' width={"150px"} src={inland_logo} alt="" />
 <img  className='px-4' width={"120px"} src={MTN_logo} alt="" />
@@ -27,7 +28,7 @@ const IconCarousel = () => {
 <img src={smart} className='px-4' width={"150px"} alt="" />
 
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item carousel-item-icon">
 <img  className='px-4' width={"150px"} src={clientlogo} alt="" />
 <img  className='px-4' width={"150px"} src={inland_logo} alt="" />
 <img  className='px-4'width={"1px"} src={optus_logo} alt="" />

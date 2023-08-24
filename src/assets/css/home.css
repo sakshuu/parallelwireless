@@ -4,6 +4,7 @@
   position: relative;
   left: 0px;
   top: 0px;
+  right: 0px;
 
 }
 .main-content{
@@ -16,15 +17,7 @@
   height: 80vh !important;
 }
 /* icon */
-.carousel{
-  background-color: lightgrey;
-  margin-bottom: 6%;
-  padding: 20px;
-  margin-top: 7%;
-}
-.carousel-item{
-  margin-left: 10%;
-}
+
 /*  */
 /* careers */
 .careers-box{

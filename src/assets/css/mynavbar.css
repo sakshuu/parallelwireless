@@ -1,7 +1,7 @@
 .navbar{
-    position:fixed !important;
-    overflow: hidden !important;
-    top: 0px !important;
+    /* position:fixed !important; */
+    /* overflow: hidden !important; */
+    /* top: 0px !important; */
     background-color: white;
     width: 100vw;
     /* bottom: 4%; */
@@ -22,6 +22,9 @@
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
   /* text-decoration-style: solid; */
+}
+.modal{
+    margin-top: 4%;
 }
 
 

@@ -13,9 +13,9 @@
 .font-text{
     font-size: 100px;
 }
-.main{
+/* .main{
     margin-top: 7%;
-}
+} */
 .line-space{
     line-height: 1px;
 }
@@ -43,4 +43,21 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+/* soation */
+.main-heading{
+    /* z-index: 3; */
+    position: absolute;
+    width: 100vw;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    padding: 5px;
+    top: 81%;
+    /* margin-top: 20%; */
+}
+.heading{
+    font-size: 65px !important;
+    text-align: center;
+    color: black;
+}
 
