@@ -45,6 +45,12 @@
   }
 
 /* soation */
+.para{
+    margin-top: 2%;
+    font-size: larger;
+    font-weight: 200;
+    
+}
 .main-heading{
     /* z-index: 3; */
     position: absolute;
@@ -59,5 +65,8 @@
     font-size: 65px !important;
     text-align: center;
     color: black;
+}
+.my-footer{
+  box-shadow: 5px 4px #BEBEBE;
 }
 

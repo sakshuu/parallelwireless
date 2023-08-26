@@ -1,0 +1,1 @@
+export { default as Case_study } from "./Case_study"

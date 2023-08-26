@@ -8,3 +8,25 @@
     background-size: cover !important;
     background-repeat: no-repeat, repeat; 
 }
+.img-mid{
+    position: relative;
+}
+.footer-mid-img{
+    width: 100vw !important;
+    height: 85vh !important;
+}
+.mid-content{
+    color: white;
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    background-color: black;
+    opacity: 0.7;
+    padding: 65px;
+}
+.proTech-img{
+    width: 95%;
+
+}

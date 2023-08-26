@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./../assets/css/solutions.css"
+import { FooterUpperSeaction } from '../components'
 
 const Solutions = () => {
   
@@ -112,6 +113,7 @@ const Solutions = () => {
   </div> 
   </div> 
 
+<FooterUpperSeaction/>
   </>
 } 
 
