@@ -4,25 +4,58 @@ import "./../assets/css/mynavbar.css";
 
 const MyNavbar = () => {
   const [showModal, setShowModal] = useState(false);
-
   const toggleModal = () => {
     setShowModal(!showModal);
   };
 
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  
-
-  const handleToggle = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+// solutions deopdown
+  const [solutionsOpen, setSolutionsOpen] = useState(false)
+    const solutionshandleToggle = () => {
+    setSolutionsOpen(!solutionsOpen);
+  };
+  const solutionshandleMouseEnter = () => {
+    setSolutionsOpen(true);
+  };
+  const solutionshandleMouseLeave = () => {
+    setSolutionsOpen(false);
   };
 
-  const handleMouseEnter = () => {
-    setIsDropdownOpen(true);
+// products tech
+const [productsTechOpen, setProductsTechOpen] = useState(false)
+const productsTechhandleToggle = () => {
+    setProductsTechOpen(!productsTechOpen);
+  };
+  const productsTechhandleMouseEnter = () => {
+    setProductsTechOpen(true);
+  };
+  const productsTechhandleMouseLeave = () => {
+    setProductsTechOpen(false);
   };
 
-  const handleMouseLeave = () => {
-    setIsDropdownOpen(false);
+  // compuny
+  const [compunyOpen, setCompunyOpen] = useState(false)
+  const compunyhandleToggle = () => {
+    setCompunyOpen(!compunyOpen);
   };
+  const compunyhandleMouseEnter = () => {
+    setCompunyOpen(true);
+  };
+  const compunyhandleMouseLeave = () => {
+    setCompunyOpen(false);
+  };
+
+  // resources
+  const [resourcesOpen, setResourcesOpen] = useState(false)
+  const resourceshandleToggle = () => {
+    setResourcesOpen(!resourcesOpen);
+  };
+  const resourceshandleMouseEnter = () => {
+    setResourcesOpen(true);
+  };
+  const resourceshandleMouseLeave = () => {
+    setResourcesOpen(false);
+  };
+
 
   return <>
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -36,36 +69,74 @@ const MyNavbar = () => {
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="main-nav navbar-nav main-nav align-items-center">
           {/* <Link  class="a nav-link" to="/solutions">Solutions</Link> */}
-          <Link to="/solutions" className="dropdown nav-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <Link to="/solutions" className="a dropdown nav-link" onMouseEnter={solutionshandleMouseEnter} onMouseLeave={solutionshandleMouseLeave}>
   <div
     className="dropdown-toggle custom-dropdown-toggle" 
-    onClick={handleToggle}
+    onClick={solutionshandleToggle}
   >
     Solutions
   </div>
-  <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-    <li><a className="dropdown-item" href="#">Action</a></li>
-    <li><a className="dropdown-item" href="#">Another action</a></li>
-    <li><a className="dropdown-item" href="#">Something else </a></li>
+  <ul className={`dropdown-menu productsTech-main ${solutionsOpen ? 'show' : ''}`}>
+    <li><a className="dropdown-item" href="#">Urben</a></li>
+    <li><a className="dropdown-item" href="#">Rural</a></li>
+    <li><a className="dropdown-item" href="#">Private LIT</a></li>
   </ul>
 </Link>
+          {/* <Link  class="a nav-link" to="/products-technologies">Products & Technologies</Link> */}
 
-
-          <Link  class="a nav-link" to="/products-technologies">Products & Technologies</Link>
-
-          {/* <Link to="/products-technologies" className="dropdown nav-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <Link to="/products-technologies" className="a dropdown nav-link" onMouseEnter={productsTechhandleMouseEnter} onMouseLeave={productsTechhandleMouseLeave}>
   <div
     className="dropdown-toggle custom-dropdown-toggle" 
-    onClick={handleToggle}
+    onClick={productsTechhandleToggle}
   >
     Products & Technologies
   </div>
-  <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-    <li><a className="dropdown-item" href="#">Action</a></li>
-    <li><a className="dropdown-item" href="#">Another action</a></li>
-    <li><a className="dropdown-item" href="#">Something else </a></li>
-  </ul>
-</Link> */}
+  <div className={`dropdown-menu productsTech productsTech-main ${productsTechOpen ? 'show' : ''}`}>
+    <div className="container p-4">
+<div className="row">
+  <div className="col-md-2">
+    <h4 className="b-text">Technologies</h4>
+    <p>5G</p>
+    <p>4G</p>
+    <p>3G</p>
+    <p>2G</p>
+  </div>
+  <div className="col-md-3">
+    <h4 className="b-text">Products</h4>
+    <h6 className='b-text'>ACCESS : OpenRAN</h6>
+    <p>Software-defined Open</p>
+    <p>vRAN</p>
+    <p>5G OpenRAN</p>
+  </div>
+  <div className="col-md-2">
+    <h6 className="b-text">Network Software</h6>
+    <p>Interoperable</p>
+    <p>Unified</p>
+    <p>Cloud-native</p>
+    <p>End-to-end</p>
+    <p>Performance</p>
+    <p>Multi-tenant and sharing</p>
+    <p>Secure</p>
+  </div>
+  <div className="col-md-2">
+    <h6 className="b-text">Network Intelligence</h6>
+    <p>Analytics</p>
+    <p>Real-Time ALL G SON</p>
+    <p>Network Orchestrator</p>
+  </div>
+  <div className="col-md-3">
+    <div className='drop-main'>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3VGft6mvNYOiHHZKGCv8myBvcHShLw3GDD-gvLiUH&s" width={"100%"} alt="" />
+      <div className='drop-inside'>
+      <h5 className="b-text text-inside">Visit our resources page to download collateral, watch customer testimonial, or get a spec sheet.</h5>
+      <h6 className="b-text text-inside">RESOURCES</h6>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+  </div>
+</Link>
 
           <Link  class="a nav-link" to="/customers">Customers</Link>
           <Link  class="a nav-link" to="/compuny">Compuny</Link>
@@ -104,21 +175,6 @@ const MyNavbar = () => {
       )}
     </div>
           <Link href=""><button type="button" class="btn btn-outline-danger btn-lg">Contact Us</button></Link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
       </div>
     </div>

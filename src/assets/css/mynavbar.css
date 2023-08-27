@@ -28,6 +28,27 @@
 }
 .custom-dropdown-toggle::after {
     display: none; /* Hide the ::after pseudo-element that contains the icon */
-  }
+}
+
+/* dropdown */
+  .productsTech {
+      width: 98vw;
+      margin-left: -35vw; /* This centers the dropdown */
+    }
+    .productsTech-main{
+        margin-top: 19%;
+    }
+    .drop-main{
+        position: relative;
+    }
+    .drop-inside{
+        padding: 10px !important;
+position: absolute;
+top:1%
+    }
+    .text-inside{
+        color: whitesmoke;
+    }
+  
 
 
