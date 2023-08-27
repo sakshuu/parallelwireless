@@ -26,5 +26,8 @@
 .modal{
     margin-top: 4%;
 }
+.custom-dropdown-toggle::after {
+    display: none; /* Hide the ::after pseudo-element that contains the icon */
+  }
 
 

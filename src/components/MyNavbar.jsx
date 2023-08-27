@@ -10,6 +10,7 @@ const MyNavbar = () => {
   };
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  
 
   const handleToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -34,8 +35,38 @@ const MyNavbar = () => {
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="main-nav navbar-nav main-nav align-items-center">
-          <Link  class="a nav-link" to="/solutions">Solutions</Link>
+          {/* <Link  class="a nav-link" to="/solutions">Solutions</Link> */}
+          <Link to="/solutions" className="dropdown nav-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+  <div
+    className="dropdown-toggle custom-dropdown-toggle" 
+    onClick={handleToggle}
+  >
+    Solutions
+  </div>
+  <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
+    <li><a className="dropdown-item" href="#">Action</a></li>
+    <li><a className="dropdown-item" href="#">Another action</a></li>
+    <li><a className="dropdown-item" href="#">Something else </a></li>
+  </ul>
+</Link>
+
+
           <Link  class="a nav-link" to="/products-technologies">Products & Technologies</Link>
+
+          {/* <Link to="/products-technologies" className="dropdown nav-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+  <div
+    className="dropdown-toggle custom-dropdown-toggle" 
+    onClick={handleToggle}
+  >
+    Products & Technologies
+  </div>
+  <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
+    <li><a className="dropdown-item" href="#">Action</a></li>
+    <li><a className="dropdown-item" href="#">Another action</a></li>
+    <li><a className="dropdown-item" href="#">Something else </a></li>
+  </ul>
+</Link> */}
+
           <Link  class="a nav-link" to="/customers">Customers</Link>
           <Link  class="a nav-link" to="/compuny">Compuny</Link>
           <Link  class="a nav-link" to="/careers">Careers</Link>
@@ -73,20 +104,16 @@ const MyNavbar = () => {
       )}
     </div>
           <Link href=""><button type="button" class="btn btn-outline-danger btn-lg">Contact Us</button></Link>
-    {/* <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <div
-        className="dropdown-toggle"
-        // type="button"
-        onClick={handleToggle}
-      >
-        Dropdown
-      </div>
-      <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-        <li><a className="dropdown-item" href="#">Action</a></li>
-        <li><a className="dropdown-item" href="#">Another action</a></li>
-        <li><a className="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </div> */}
+
+
+
+
+
+
+
+
+
+
 
 
 
