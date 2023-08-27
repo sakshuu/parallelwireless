@@ -3,7 +3,8 @@ import  "./../assets/css/customers.css";
 import  clientlogo from "./../assets/img/clientlogo.png";
 import  etisalat_logo from "./../assets/img/etisalat_logo.jpg";
 import  inland_logo from "./../assets/img/inland_logo.png";
-import  internetParaTodos from "./../assets/img/internetParaTodos.png";
+// import  internetParaTodos from "./../assets/img/internetParaTodos.png";
+import InternetParaTodos from "./../assets/img/InternetParaTodos.png";
 import  MTN_logo from "./../assets/img/MTN_logo.jpg";
 import  Optimera from "./../assets/img/Optimera.png";
 import  optus_logo from "./../assets/img/optus_logo.png";
@@ -38,7 +39,7 @@ const Customers = () => {
     <img className='custom-icon' src={clientlogo} alt="" />
     <img className='custom-icon' src={etisalat_logo} alt="" />
     <img className='custom-icon' src={inland_logo} alt="" />
-    <img className='custom-icon' src={internetParaTodos} alt="" />
+    <img className='custom-icon' src={InternetParaTodos} alt="" />
     <img className='custom-icon' src={MTN_logo} alt="" />
     <img className='custom-icon' src={Optimera} alt="" />
   </div>
