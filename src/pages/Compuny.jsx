@@ -2,10 +2,12 @@ import React from 'react'
 // import compuny from "./../assets/css/compuny.css";
 import "./../assets/css/compuny.css"
 import { Link } from 'react-router-dom'
+import hero_compuny from "./../assets/img/bg/hero_compuny.avif";
 
 const Compuny = () => {
   return <>
-  <div className="bcground">
+  <div >
+    <img className="bcground" src={hero_compuny} alt="" />
 <div className='main-heading'>
 <h1 className='heading'>Compuny</h1> 
   </div>

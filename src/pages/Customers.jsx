@@ -14,11 +14,13 @@ import  telefonica from "./../assets/img/telefonica.png";
 import  vodacom from "./../assets/img/vodacom.png";
 import  vodaphone_logo from "./../assets/img/vodaphone_logo.png";
 import { Case_study } from '../components/seaction/customers';
+import hero_customers from "./../assets/img/bg/hero_customers.jpg";
 
 const Customers = () => {
   return <>
     
-    <div className="bcground">
+    <div >
+      <img className="bcground" src={hero_customers} alt="" />
 <div className='main-heading'>
 <h1 className='heading'>Customers</h1> 
   </div>

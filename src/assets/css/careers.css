@@ -1,6 +1,6 @@
 .bcground{
     position: relative;
-    background-image: url("https://plus.unsplash.com/premium_photo-1661266819853-ac00dcaf21d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80") !important; 
+    /* background-image: url("") !important;  */
     height: 75vh !important;
     width: 100vw !important; 
     background-size: cover !important;
@@ -8,7 +8,4 @@
 }
 .hr-main{
     border: 2px solid orangered;
-}
-.carousel-inner{
-    width: 55%;
 }

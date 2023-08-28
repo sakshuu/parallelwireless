@@ -2,10 +2,12 @@ import React from 'react'
 import "./../assets/css/products_tech.css"
 import { Products_technology } from '../components/seaction/products_tech'
 import { FooterUpperSeaction } from '../components'
+import hero_products from "./../assets/img/bg/hero_products.jpg";
 
 const Products_Technologies = () => {
   return <>
-  <div className="bcground">
+  <div >
+    <img className="bcground" src={hero_products} alt="" />
 <div className='main-heading'>
 <h1 className='heading'>Products & Technologies</h1> 
   </div>

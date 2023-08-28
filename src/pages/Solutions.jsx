@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./../assets/css/solutions.css"
 import { FooterUpperSeaction } from '../components'
+import hero_solutions from "./../assets/img/bg/hero_solutions.jpg";
 
 const Solutions = () => {
   
@@ -35,7 +36,8 @@ const Solutions = () => {
   // ]
   
   return <>
-<div className="bcground">
+<div >
+  <img className="bcground" src={hero_solutions} alt="" />
 <div className='main-heading'>
 <h1 className='heading'>Solutions</h1> 
   </div>

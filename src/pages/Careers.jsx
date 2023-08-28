@@ -1,10 +1,12 @@
 import React from 'react'
 import { Opportunities } from '../components/seaction/Careers'
 import "./../assets/css/careers.css"
+import hero_careers from "./../assets/img/bg/hero_careers.avif";
 
 const Careers = () => {
   return <>
-  <div className="bcground">
+  <div >
+    <img className="bcground" src={hero_careers} alt="" />
 <div className='main-heading'>
 <h1 className='heading'>Careers</h1> 
   </div>

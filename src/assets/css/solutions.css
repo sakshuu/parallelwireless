@@ -8,18 +8,13 @@
 .content{
     margin-top: 4%;
 }
-.text-center{
-text-align: center;
-}
 
 .bcground{
     position: relative;
-    /* top:20%; */
-    /* margin-top: 7%; */
-    background-image: url("https://www.parallelwireless.com/wp-content/uploads/hero-solutions.jpg") !important; 
+    /* background-image: url("https://www.parallelwireless.com/wp-content/uploads/hero-solutions.jpg") !important;  */
     height: 75vh !important;
     width: 100vw !important; 
     background-size: cover !important;
-    background-repeat: no-repeat, repeat; 
+    background-repeat: no-repeat, repeat !important; 
 }
 
