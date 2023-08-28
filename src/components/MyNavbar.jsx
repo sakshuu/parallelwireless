@@ -91,7 +91,7 @@ const productsTechhandleToggle = () => {
   >
     Products & Technologies
   </div>
-  <div className={`dropdown-menu productsTech productsTech-main ${productsTechOpen ? 'show' : ''}`}>
+  <div className={`dropdown-menu productsTech  ${productsTechOpen ? 'show' : ''}`}>
     <div className="container p-4">
 <div className="row">
   <div className="col-md-2">
@@ -139,9 +139,48 @@ const productsTechhandleToggle = () => {
 </Link>
 
           <Link  class="a nav-link" to="/customers">Customers</Link>
-          <Link  class="a nav-link" to="/compuny">Compuny</Link>
+
+          {/* <Link  class="a nav-link" to="/compuny">Compuny</Link> */}
+
+          <Link to="/compuny" className="a dropdown nav-link" onMouseEnter={compunyhandleMouseEnter} onMouseLeave={compunyhandleMouseLeave}>
+  <div
+    className="dropdown-toggle custom-dropdown-toggle" 
+    onClick={compunyhandleToggle}
+  >
+    Compuny
+  </div>
+  <ul className={`dropdown-menu  ${compunyOpen ? 'show' : ''}`}>
+    <li><a className="dropdown-item" href="#">Who We Are</a></li>
+    <li><a className="dropdown-item" href="#">News</a></li>
+    <li><a className="dropdown-item" href="#">Events</a></li>
+    <li><a className="dropdown-item" href="#">Leadership</a></li>
+    <li><a className="dropdown-item" href="#">Awards</a></li>
+    <li><a className="dropdown-item" href="#">Contact</a></li>
+    <li><a className="dropdown-item" href="#">Partners</a></li>
+    <li><a className="dropdown-item" href="#"></a></li>
+  </ul>
+</Link>
+          
+
           <Link  class="a nav-link" to="/careers">Careers</Link>
-          <Link  class="a nav-link" to="/resources">Resources</Link>
+          {/* <Link  class="a nav-link" to="/resources">Resources</Link> */}
+          <Link to="/resources" className="a dropdown nav-link" onMouseEnter={resourceshandleMouseEnter} onMouseLeave={resourceshandleMouseLeave}>
+  <div
+    className="dropdown-toggle custom-dropdown-toggle" 
+    onClick={resourceshandleToggle}
+  >
+    Resources
+  </div>
+  <ul className={`dropdown-menu  ${resourcesOpen ? 'show' : ''}`}>
+    <li><a className="dropdown-item" href="#">White Papers</a></li>
+    <li><a className="dropdown-item" href="#">Solution Overviews</a></li>
+    <li><a className="dropdown-item" href="#">Videos</a></li>
+    <li><a className="dropdown-item" href="#">Blogs</a></li>
+    <li><a className="dropdown-item" href="#">Case Studies</a></li>
+    <li><a className="dropdown-item" href="#">Webinars</a></li>
+    <li><a className="dropdown-item" href="#">OpenRAN</a></li>
+  </ul>
+</Link>
      <div className="search-bar">
       <i
         className="bi bi-search bi-icon p-4"
