@@ -77,9 +77,9 @@ const productsTechhandleToggle = () => {
     Solutions
   </div>
   <ul className={`dropdown-menu productsTech-main ${solutionsOpen ? 'show' : ''}`}>
-    <li><a className="dropdown-item" href="#">Urben</a></li>
-    <li><a className="dropdown-item" href="#">Rural</a></li>
-    <li><a className="dropdown-item" href="#">Private LIT</a></li>
+    <li><Link className="dropdown-item nav-link a" to="/solutions/urben">Urben</Link></li>
+    <li><Link className="dropdown-item nav-link a" to="/solutions/rural" href="#">Rural</Link></li>
+    <li><Link className="dropdown-item nav-link a" to="/solutions/private" href="#">Private LIT</Link></li>
   </ul>
 </Link>
           {/* <Link  class="a nav-link" to="/products-technologies">Products & Technologies</Link> */}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./../assets/css/solutions.css"
+import "./../assets/css/css_solutions/solutions.css"
 import { FooterUpperSeaction } from '../components'
 import hero_solutions from "./../assets/img/bg/hero_solutions.jpg";
 

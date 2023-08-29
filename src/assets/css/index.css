@@ -5,7 +5,7 @@
     font-family: 'Noto Sans', sans-serif !important;
 }
 .b-text{
-    font-weight: bold;
+    font-weight: bold !important;
 }
 .color-t{
     color: orangered;
