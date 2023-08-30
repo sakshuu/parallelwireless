@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./../assets/css/mynavbar.css";
+import { DropdownSolutions, ProductsTechDropdown } from './allDropdowns';
 
 const MyNavbar = () => {
   const [showModal, setShowModal] = useState(false);
@@ -9,10 +10,7 @@ const MyNavbar = () => {
   };
 
 // solutions deopdown
-  const [solutionsOpen, setSolutionsOpen] = useState(false)
-    const solutionshandleToggle = () => {
-    setSolutionsOpen(!solutionsOpen);
-  };
+   const [solutionsOpen, setSolutionsOpen] = useState(false)
   const solutionshandleMouseEnter = () => {
     setSolutionsOpen(true);
   };
@@ -22,9 +20,6 @@ const MyNavbar = () => {
 
 // products tech
 const [productsTechOpen, setProductsTechOpen] = useState(false)
-const productsTechhandleToggle = () => {
-    setProductsTechOpen(!productsTechOpen);
-  };
   const productsTechhandleMouseEnter = () => {
     setProductsTechOpen(true);
   };
@@ -70,72 +65,12 @@ const productsTechhandleToggle = () => {
         <div class="main-nav navbar-nav main-nav align-items-center">
           {/* <Link  class="a nav-link" to="/solutions">Solutions</Link> */}
           <Link to="/solutions" className="a dropdown nav-link" onMouseEnter={solutionshandleMouseEnter} onMouseLeave={solutionshandleMouseLeave}>
-  <div
-    className="dropdown-toggle custom-dropdown-toggle" 
-    onClick={solutionshandleToggle}
-  >
-    Solutions
-  </div>
-  <ul className={`dropdown-menu productsTech-main ${solutionsOpen ? 'show' : ''}`}>
-    <li><Link className="dropdown-item nav-link a" to="/solutions/urben">Urben</Link></li>
-    <li><Link className="dropdown-item nav-link a" to="/solutions/rural" href="#">Rural</Link></li>
-    <li><Link className="dropdown-item nav-link a" to="/solutions/private" href="#">Private LIT</Link></li>
-  </ul>
+  <DropdownSolutions solutionsOpen={solutionsOpen} setSolutionsOpen={setSolutionsOpen}/>
 </Link>
           {/* <Link  class="a nav-link" to="/products-technologies">Products & Technologies</Link> */}
 
           <Link to="/products-technologies" className="a dropdown nav-link" onMouseEnter={productsTechhandleMouseEnter} onMouseLeave={productsTechhandleMouseLeave}>
-  <div
-    className="dropdown-toggle custom-dropdown-toggle" 
-    onClick={productsTechhandleToggle}
-  >
-    Products & Technologies
-  </div>
-  <div className={`dropdown-menu productsTech  ${productsTechOpen ? 'show' : ''}`}>
-    <div className="container p-4">
-<div className="row">
-  <div className="col-md-2">
-    <h4 className="b-text">Technologies</h4>
-    <p>5G</p>
-    <p>4G</p>
-    <p>3G</p>
-    <p>2G</p>
-  </div>
-  <div className="col-md-3">
-    <h4 className="b-text">Products</h4>
-    <h6 className='b-text'>ACCESS : OpenRAN</h6>
-    <p>Software-defined Open</p>
-    <p>vRAN</p>
-    <p>5G OpenRAN</p>
-  </div>
-  <div className="col-md-2">
-    <h6 className="b-text">Network Software</h6>
-    <p>Interoperable</p>
-    <p>Unified</p>
-    <p>Cloud-native</p>
-    <p>End-to-end</p>
-    <p>Performance</p>
-    <p>Multi-tenant and sharing</p>
-    <p>Secure</p>
-  </div>
-  <div className="col-md-2">
-    <h6 className="b-text">Network Intelligence</h6>
-    <p>Analytics</p>
-    <p>Real-Time ALL G SON</p>
-    <p>Network Orchestrator</p>
-  </div>
-  <div className="col-md-3">
-    <div className='drop-main'>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3VGft6mvNYOiHHZKGCv8myBvcHShLw3GDD-gvLiUH&s" width={"100%"} alt="" />
-      <div className='drop-inside'>
-      <h5 className="b-text text-inside">Visit our resources page to download collateral, watch customer testimonial, or get a spec sheet.</h5>
-      <h6 className="b-text text-inside">RESOURCES</h6>
-      </div>
-    </div>
-  </div>
-    </div>
-</div>
-  </div>
+<ProductsTechDropdown setProductsTechOpen={setProductsTechOpen} productsTechOpen={productsTechOpen}/>
 </Link>
 
           <Link  class="a nav-link" to="/customers">Customers</Link>

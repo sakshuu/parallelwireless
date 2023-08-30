@@ -36,11 +36,9 @@ const Solutions = () => {
   // ]
   
   return <>
-<div >
   <img className="bcground" src={hero_solutions} alt="" />
 <div className='main-heading'>
 <h1 className='heading'>Solutions</h1> 
-  </div>
 </div>
 
 <div className="container mb-4">

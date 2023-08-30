@@ -1,1 +1,6 @@
 export {default as Products_technology} from  "./Products_technology"
+export {default as Page_Technologies} from  "./ProductsTechDropdown/Technologies/Page_Technologies"
+export {default as Page_2G} from  "./ProductsTechDropdown/Technologies/Page_2G"
+export {default as Page_3G} from  "./ProductsTechDropdown/Technologies/Page_3G"
+export {default as Page_4G} from  "./ProductsTechDropdown/Technologies/Page_4G"
+export {default as Page_5G} from  "./ProductsTechDropdown/Technologies/Page_5G"

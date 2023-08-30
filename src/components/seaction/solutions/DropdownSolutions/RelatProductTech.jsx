@@ -1,5 +1,5 @@
 import React from 'react'
-import "./../../../assets/css/css_solutions/urban.css";
+import "./../../../../assets/css/css_solutions/urban.css";
 
 const RelatProductTech = () => {
     const data = [

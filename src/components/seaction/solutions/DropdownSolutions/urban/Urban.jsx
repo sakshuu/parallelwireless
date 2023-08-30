@@ -1,6 +1,6 @@
 import React from 'react'
-import  "./../../../../assets/css/css_solutions/solutions.css";
-import hero_urban from "./../../../../assets/img/bg/hero_urban.avif";
+import  "./../../../../../assets/css/css_solutions/solutions.css";
+import hero_urban from "./../../../../../assets/img/bg/hero_urban.avif";
 import RelatProductTech from '../RelatProductTech';
 
 const Urban = () => {
