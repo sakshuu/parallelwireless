@@ -1,16 +1,15 @@
 import React from 'react'
 import "./../assets/css/products_tech.css"
-import { Products_technology } from '../components/seaction/products_tech'
 import { FooterUpperSeaction } from '../components'
 import hero_products from "./../assets/img/bg/hero_products.jpg";
+import { Products_technology } from '../components/seaction/products_tech'
+import BgSeaction from '../components/BgSeaction';
 
 const Products_Technologies = () => {
   return <>
-  <div >
     <img className="bcground" src={hero_products} alt="" />
 <div className='main-heading'>
 <h1 className='heading'>Products & Technologies</h1> 
-  </div>
 </div>
 <div className="container mt-4">
 
@@ -20,14 +19,7 @@ const Products_Technologies = () => {
 <Products_technology/>
 </div>
 <FooterUpperSeaction/>
-<div className='img-mid'>
-  <img src="https://media.istockphoto.com/id/1406960186/photo/the-skyline-of-new-york-city-united-states.jpg?s=612x612&w=0&k=20&c=yZJXNdzq3d5bKgvVzPBahBujpbVUXFyjyl9FN9L7esM=" className='footer-mid-img' alt="" />
-  <div className='mid-content'>
-    <h1>Vodafone Case Study</h1>
-    <p className='mt-4'>Learn how the Parallel Wireless ALL G OpenRAN network solution helped Vodafone modernize their network and reduce CAPEX and OPEX.</p>
-    <button type="button" class="btn bc-btn">Learn more <i class="bi bi-cloud-arrow-down-fill"></i></button>
-  </div>
-</div>
+<BgSeaction/>
   </>
 }
 
